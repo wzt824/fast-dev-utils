@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  background-color: #f5f5f5;
+}
+
+input {
+  border: 0;
+  outline: none;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+select {
+  border: none;
+  outline: none;
+  direction: rtl;
+  appearance: none;
+}
+select option {
+  direction: ltr;
+}
+
+/* common */
+.flex {
+  display: flex;
+}
+.flex_justify_center {
+  justify-content: center;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.flex_items {
+  align-items: center;
+}
+.flex_1 {
+  flex: 1;
+}
+.tc {
+  text-align: center;
+}
+.tr {
+  text-align: right;
+}
+.pr {
+  position: relative;
+}
+.mr5 {
+  margin-right: 5px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr12 {
+  margin-right: 12px;
+}
+
+/*  */
+.L-list-wrap {
+  width: 100%;
+  padding-left: 15px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.L-item-wrap {
+  padding: 10px 15px 10px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.L-item-content,
+.L-item-checkbox-content,
+.L-item-radio-content,
+.L-item-select-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.L-item-checkbox-content,
+.L-item-radio-content,
+.L-item-select-content {
+  flex-wrap: wrap;
+}
+.L-item-select-content {
+  flex-direction: column;
+  align-items: unset;
+}
+.L-item-select-content select {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.L-item-radio-content label,
+.L-item-checkbox-content label {
+  margin-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.L-item-content-icon {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+}
+.L-item-content-input input {
+  width: 100%;
+}
+
+.L-item-content-btn {
+  height: auto;
+  width: auto;
+  margin: 0;
+  white-space: nowrap;
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 5px;
+  margin-left: 5px;
+  color: #fff;
+  background: linear-gradient(to right, rgb(231, 30, 30), rgb(250 131 131));
+}
+.L-item-label {
+  width: 30%;
+}
+
+.L-mark {
+  position: absolute;
+  color: #e24242;
+  font-style: normal;
+  margin-left: 2px;
+}

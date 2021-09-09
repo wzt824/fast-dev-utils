@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="8px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>下拉按钮</title>
+    <g id="10.24-风格" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="表单/下拉" transform="translate(-346.000000, -21.000000)">
+            <g id="编组" transform="translate(345.000000, 18.000000)">
+                <rect id="Rectangle" transform="translate(7.000000, 7.000000) scale(1, -1) rotate(90.000000) translate(-7.000000, -7.000000) " x="0" y="0" width="14" height="14"></rect>
+                <path d="M5.1291549,7 L10.7416902,11.7309435 C11.0861033,12.0212578 11.0861033,12.4919501 10.7416902,12.7822643 C10.3972771,13.0725786 9.8388732,13.0725786 9.49446013,12.7822643 L3.2583098,7.52566039 C3.08610327,7.38050328 3,7.19025164 3,7 C3,6.80974836 3.08610327,6.61949672 3.2583098,6.47433961 L9.49446013,1.21773566 C9.8388732,0.927421445 10.3972771,0.927421445 10.7416902,1.21773566 C11.0861033,1.50804988 11.0861033,1.97874223 10.7416902,2.26905645 L5.1291549,7 Z" id="Combined-Shape" fill="#ED3535" transform="translate(7.000000, 7.000000) scale(1, -1) rotate(90.000000) translate(-7.000000, -7.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

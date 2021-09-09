@@ -1,0 +1,17 @@
+
+
+button {
+  display: block;
+  width: 90%;
+  height: 30px;
+  background: linear-gradient(to right, rgb(231, 30, 30), rgb(250 131 131));
+  border: 0;
+  outline: none;
+  color: #fff;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+input[name="openLink"] {
+  color: #3f81f1;
+}
