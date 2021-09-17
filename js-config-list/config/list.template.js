@@ -32,13 +32,13 @@ const template = '<script id="tpl" type="text/template">'+
                   '{@if item.isReadonly == true}'+
                     'readonly'+
                   '{@/if}'+
-                'alt=""/>'+
+                '>'+
               '{@else}'+
                 '<!-- 是否不可修改 -->'+
                 '{@if item.isReadonly == true}'+
-                  '<input name="${item.field}" readonly type="text" value="${item.value}" placeholder="${item.placeholder}" class="tr flex_1">'+
+                  '<input name="${item.field}" readonly value="${item.value}" placeholder="${item.placeholder}" class="tr flex_1">'+
                 '{@else}'+
-                  '<input name="${item.field}" type="text" value="${item.value}" placeholder="${item.placeholder}" class="tr flex_1">'+
+                  '<input name="${item.field}" value="${item.value}" placeholder="${item.placeholder}" class="tr flex_1">'+
                 '{@/if}'+
               '{@/if}'+
               '<!-- 是否存在buytton按钮 -->'+
