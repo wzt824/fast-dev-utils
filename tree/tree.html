@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>树形结构</title>
+</head>
+<body>
+
+  <div id="err-wrap">
+    <p>123</p>
+    <p>456</p>
+    <p>7890</p>
+  </div>
+
+  <script>
+
+    let source = [
+      {id:1,parentId:null,name:"一级菜单A",rank:1},
+      {id:2,parentId:null,name:"一级菜单B",rank:1},
+      {id:3,parentId:null,name:"一级菜单C",rank:1},
+      {id:4,parentId:1,name:"二级菜单A-A",rank:2},
+      {id:5,parentId:1,name:"二级菜单A-B",rank:2},
+      {id:6,parentId:2,name:"二级菜单B-A",rank:2},
+      {id:7,parentId:4,name:"三级菜单A-A-A",rank:3},
+      {id:8,parentId:7,name:"四级菜单A-A-A-A",rank:4},
+      {id:9,parentId:8,name:"五级菜单A-A-A-A-A",rank:5},
+      {id:10,parentId:9,name:"六级菜单A-A-A-A-A-A",rank:6},
+      {id:11,parentId:10,name:"七级菜单A-A-A-A-A-A-A",rank:7},
+      {id:12,parentId:11,name:"八级菜单A-A-A-A-A-A-A-A",rank:8},
+      {id:13,parentId:12,name:"九级菜单A-A-A-A-A-A-A-A-A",rank:9},
+      {id:14,parentId:13,name:"十级菜单A-A-A-A-A-A-A-A-A-A",rank:10}
+    ]
+
+    // 1. 数组filter方法
+    function setTreeInfo (data) {
+      // 1. 对源数据进行深度克隆、避免污染
+      const cloneData = JSON.parse(JSON.stringify(data))
+      // 2. 对拷贝的数据进行处理
+      return cloneData.filter( item => {
+        // 2.1 寻找子元素
+        const childArr = cloneData.filter( child => item.id === child.parentId )
+        // 2.2 若有子元素则对父元素添加childrens属性并且将子元素赋值给childrens
+        childArr.length > 0 ? item['childrens'] = childArr : ''
+        // 2.3 返回第一级元素
+        return item.parentId === null
+      })
+    }
+    console.log(setTreeInfo(source))
+
+  </script>
+</body>
+</html>

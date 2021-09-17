@@ -213,7 +213,7 @@ var listTwoConfigData = {
       type: 'input',
       label: '验证码',
       placeholder: '请输入',
-      value: '',
+      value: '231210',
       isButton: {
         text: '点击获取验证码',
         props: {
@@ -221,7 +221,8 @@ var listTwoConfigData = {
         }
       },
       props: {
-        'maxLength': '6'
+        'type': 'number',
+        'oninput': "if(value.length>6)value=value.slice(0,6)"
       },
       isRequired: true
     }

@@ -15,7 +15,7 @@ function diposeResult() {
 
 // 相同的属性的属性值拼接
 function propertySplit (data, tag = ',') {
-  for (let i = 0; i < data.length; i++) {
+  for (let i = 0; i < data.length; i++) { 
     for (var j = i + 1; j < data.length; j++) {
       if (data[i].name === data[j].name) {
         data[i].value += tag + data[j].value
