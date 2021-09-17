@@ -26,9 +26,21 @@ let List = {
     $("#submit").on('click', function(){
       const testForm = $("#testHtml form").serializeArray()
       const schoolFrom = $("#schoolHtml form").serializeArray()
+      // diposeResult() 合并数组
       let result = diposeResult(testForm, schoolFrom)
+      // propertySplit() 将属性相同的数组，值进行拼接
+      const filterData = propertySplit(result, '-')
+      // 验证版
+      let resultConfig = diposeResult(listConfigData.list, listTwoConfigData.list)
 
-      propertySplit(result, '-')
+      // validatePass() 非空验证（表单信息和配置数）：验证失败返回提示信息验证成功返回表单数据
+      const vaild = validatePass(filterData, resultConfig)
+
+      if (typeof vaild === 'string') {
+        alert(vaild)
+      } else {
+        console.log(vaild);
+      }
     })
   }
 }

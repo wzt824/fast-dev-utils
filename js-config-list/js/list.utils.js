@@ -24,5 +24,25 @@ function propertySplit (data, tag = ',') {
       }
     }
   }
-  console.log(data)
+  return data
+}
+
+
+// 添加表单验证信息
+function validatePass(data, config){
+  let isVaild = ''
+  for (const con of config) {
+    for (const d of data) {
+      if (con.field == d.name) {
+        if (con.isRequired && d.value === '') {
+          return isVaild = con.label + '不能为空'
+        }
+      }
+    }
+  }
+  if (isVaild) {
+    return isVaild
+  } else {
+    return data
+  }
 }

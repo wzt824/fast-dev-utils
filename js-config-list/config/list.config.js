@@ -213,7 +213,7 @@ var listTwoConfigData = {
       type: 'input',
       label: '验证码',
       placeholder: '请输入',
-      value: '231210',
+      value: '',
       isButton: {
         text: '点击获取验证码',
         props: {
